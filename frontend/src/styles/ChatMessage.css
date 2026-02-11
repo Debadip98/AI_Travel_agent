@@ -1,0 +1,160 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 80%;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-user {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.message-bot {
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+.message-content {
+  background: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.message-user .message-content {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px 4px 12px 12px;
+}
+
+.message-bot .message-content {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px 12px 12px 12px;
+}
+
+.message.error .message-content {
+  background: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef5350;
+}
+
+.message-text {
+  margin: 0;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.message-time {
+  font-size: 0.75em;
+  opacity: 0.6;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.message-user .message-time {
+  text-align: right;
+  color: #666;
+}
+
+.message-bot .message-time {
+  text-align: left;
+  color: #999;
+}
+
+/* Data Display */
+.data-display {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.data-display h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.data-display h5 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.data-display ul {
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 0.95em;
+}
+
+.data-display li {
+  padding: 4px 0;
+}
+
+/* Flights */
+.flight-item {
+  background: rgba(102, 126, 234, 0.05);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 8px 0;
+  border-left: 3px solid #667eea;
+}
+
+.flight-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.flight-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9em;
+  opacity: 0.8;
+  gap: 4px;
+}
+
+.price {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Email Preview */
+.email-preview {
+  background: rgba(0,0,0,0.02);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+}
+
+.email-preview pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: monospace;
+  margin-top: 8px;
+  padding: 8px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .message {
+    max-width: 95%;
+  }
+}
