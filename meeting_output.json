@@ -1,0 +1,19 @@
+{
+  "meeting_summary": {
+    "title": "Not specified",
+    "date": "Not specified",
+    "participants": [],
+    "executive_summary": "Not specified"
+  },
+  "agenda_overview": [],
+  "key_discussions": [],
+  "decisions": [],
+  "action_items": [],
+  "risks_and_blockers": [],
+  "next_steps": [],
+  "visualization_data": {
+    "speaker_contribution": [],
+    "topic_timeline": [],
+    "keyword_frequency": []
+  }
+}
